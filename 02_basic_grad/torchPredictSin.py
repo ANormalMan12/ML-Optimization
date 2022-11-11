@@ -29,7 +29,7 @@ for t in range(2000):
     # Compute and print loss using operations on Tensors.
     # Now loss is a Tensor of shape (1,)
     # loss.item() gets the scalar value held in the loss.
-    loss = (y_pred - y).pow(2).sum()
+    loss = (y_pred - y).pow(2).sum()#损失函数
     if t % 100 == 99:
         print(t, loss.item())
 
